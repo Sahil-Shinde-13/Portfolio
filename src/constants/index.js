@@ -23,7 +23,7 @@ export const PROJECTS = [
     description:
       "An Front-end UI Application Which takes live API calls from Swiggy to display data for UI with Cart functionality",
     technologies: ["HTML", "CSS", "React", "Reduc-Toolkit"],
-    link: 'https://food-ordering-app-git-main-sahils-projects-0c93b532.vercel.app/'
+    link: 'https://www.youtube.com/watch?v=io2Mkij620M'
   },
   {
     title: "University Portal",
