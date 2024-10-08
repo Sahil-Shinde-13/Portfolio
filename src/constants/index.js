@@ -15,7 +15,7 @@ export const PROJECTS = [
     description:
       "An Online Netflix clone App with Sign In and Sign UP authentication and integration of GPT for Movie Recommendations and Suggestions.",
     technologies: ["HTML", " Tailwind CSS", "React", "FireBase", "Redux-Toolkit"],
-    link: 'https://netflix-opcv6zpr7-sahils-projects-0c93b532.vercel.app/'
+    link: 'https://netflix-gpt-mu-six.vercel.app/'
   },
   {
     title: "Food Ordering App",
