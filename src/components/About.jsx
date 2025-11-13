@@ -30,7 +30,7 @@ export default function About() {
                      border-4 border-purple-500 shadow-[0_0_25px_rgba(168,85,247,0.3)] mx-auto md:mx-0"
         >
           <img
-            src="src/assets/1614172293300.jpeg"
+            src="/1614172293300.jpeg"
             alt="Sahil Shinde"
             className="w-full h-full object-cover object-top"
           />

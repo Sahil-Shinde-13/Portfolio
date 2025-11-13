@@ -103,7 +103,7 @@ export default function Navbar() {
         </a>
 
         <a
-          href="src\assets\sahil-shinde-8182044040-p.pdf"
+          href="/sahil-shinde-8182044040-p.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 border border-purple-500 text-sm font-medium rounded-lg 
