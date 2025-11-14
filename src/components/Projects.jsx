@@ -5,6 +5,7 @@ import { projects } from "../constant";
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null); // 👈 mobile tap overlay state
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
@@ -50,10 +51,16 @@ export default function Projects() {
           <motion.div
             key={i}
             variants={cardVariants}
+            onClick={() => {
+              // mobile tap detection
+              if (window.innerWidth < 768) {
+                setOpenIndex(openIndex === i ? null : i);
+              }
+            }}
             className="relative group rounded-2xl overflow-hidden 
                        bg-white/5 border border-white/10 backdrop-blur-md
                        hover:border-purple-400 hover:shadow-[0_0_30px_rgba(168,85,247,0.4)]
-                       transition-all duration-300 w-full"
+                       transition-all duration-300 w-full cursor-pointer"
           >
             {/* Image */}
             <div className="overflow-hidden">
@@ -83,9 +90,22 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-black/70 flex items-center justify-center gap-6 
-                            opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            {/* Overlay — hover on desktop, tap on mobile */}
+            <div
+              className={`
+                absolute inset-0 bg-black/70 flex items-center justify-center gap-6 
+                transition-all duration-500
+
+                ${
+                  openIndex === i
+                    ? "opacity-100 pointer-events-auto"
+                    : "opacity-0 pointer-events-none"
+                }
+
+                sm:opacity-0 sm:pointer-events-none 
+                sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto
+              `}
+            >
               <a
                 href={project.github}
                 target="_blank"
@@ -94,6 +114,7 @@ export default function Projects() {
               >
                 <FaGithub />
               </a>
+
               <a
                 href={project.demo}
                 target="_blank"
