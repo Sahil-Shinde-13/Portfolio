@@ -5,7 +5,7 @@ import { projects } from "../constant";
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
-  const [openIndex, setOpenIndex] = useState(null); // 👈 mobile tap overlay state
+  const [openIndex, setOpenIndex] = useState(null); 
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 

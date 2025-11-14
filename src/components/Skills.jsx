@@ -63,7 +63,7 @@ export default function Skills() {
         <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-24 h-[3px] bg-linear-to-r from-purple-500 to-transparent rounded-full"></span>
       </motion.h2>
 
-      {/* ===== Background container for moving cards ===== */}
+      {/* ===== Background container ===== */}
       <div className="relative w-full mb-14 py-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_0_25px_rgba(168,85,247,0.15)] overflow-hidden">
         <motion.div
           className="flex gap-4 sm:gap-8"
@@ -97,7 +97,7 @@ export default function Skills() {
 
       {/* ===== Frontend / Backend Cards ===== */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-10">
-        {/* ===== Frontend Card (smooth left to center) ===== */}
+        {/* ===== Frontend Card ===== */}
         <motion.div
           initial={{ x: -80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -122,7 +122,7 @@ export default function Skills() {
           </div>
         </motion.div>
 
-        {/* ===== Backend Card (smooth right to center) ===== */}
+        {/* ===== Backend Card ===== */}
         <motion.div
           initial={{ x: 80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

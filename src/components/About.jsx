@@ -6,7 +6,7 @@ export default function About() {
       id="about"
       className="min-h-[calc(100vh-4rem)] px-5 sm:px-10 md:px-20 py-14 sm:py-16 flex overflow-hidden flex-col items-center justify-center"
     >
-      {/* ===== Heading (always on top) ===== */}
+      {/* ===== Heading ===== */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}

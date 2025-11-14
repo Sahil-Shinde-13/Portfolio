@@ -6,7 +6,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  // Detect scroll position for background blur
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -14,7 +14,7 @@ export default function Navbar() {
       // Detect active section
       const sections = document.querySelectorAll("section[id]");
       let current = "home";
-      const scrollY = window.scrollY + 120; // offset for navbar height
+      const scrollY = window.scrollY + 120;
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;

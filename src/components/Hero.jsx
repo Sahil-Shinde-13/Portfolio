@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
 
 export default function Hero({ showContent }) {
-  // ✅ Scroll handler for “Scroll Down” button
+  //  Scroll handler
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
@@ -68,7 +68,7 @@ export default function Hero({ showContent }) {
 
       {/* ===== Scroll Down Indicator ===== */}
       <motion.div
-        onClick={scrollToAbout} // 👈 click triggers smooth scroll
+        onClick={scrollToAbout}
         initial={{ opacity: 0, y: 10 }}
         animate={
           showContent
