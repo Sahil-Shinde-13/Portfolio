@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "Image-Gallery App",
     description: "Built a performance-optimized image gallery using React with virtualization, Web Workers, and IndexedDB to handle large datasets efficiently without blocking the main thread.",
-    image: "src/assets/projects/Image-Gallery.png",
+    image: "/projects/Image-Gallery.png",
     github: "https://github.com/Sahil-Shinde-13/Image-Gallery-App-with-React-Web-Workers-Virtualization-",
     demo: "https://image-gallery-app-with-react-web-wo.vercel.app/",
     tech: ["React", "Web-Worker", "Virtualization", "Tailwind", "IndexedDB"]
