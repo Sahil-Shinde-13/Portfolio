@@ -8,14 +8,14 @@ export const projects = [
     demo: "https://netflix-gpt-mu-six.vercel.app/",
     tech: ["React", "Redux", "Firebase", "Tailwind", "OpenAI API", "TMDB API"]
   },
+
   {
-    title: "Food Ordering App",
-    description:
-      "A Swiggy-like food ordering platform with live restaurant data, cart system, menu page and smooth UI interactions.",
-    image: "/projects/Food-ordering.png",
-    github: "https://github.com/Sahil-Shinde-13/Food-Ordering-App",
-    demo: "https://www.youtube.com/watch?v=io2Mkij620M",
-    tech: ["React", "Redux Toolkit", "Tailwind", "Swiggy Live API"]
+    title: "Image-Gallery App",
+    description: "Built a performance-optimized image gallery using React with virtualization, Web Workers, and IndexedDB to handle large datasets efficiently without blocking the main thread.",
+    image: "src/assets/projects/Image-Gallery.png",
+    github: "https://github.com/Sahil-Shinde-13/Image-Gallery-App-with-React-Web-Workers-Virtualization-",
+    demo: "https://image-gallery-app-with-react-web-wo.vercel.app/",
+    tech: ["React", "Web-Worker", "Virtualization", "Tailwind", "IndexedDB"]
   },
 
   {
@@ -28,6 +28,17 @@ export const projects = [
     tech: ["MongoDB", "Express", "React", "Node", "JWT", "Cloudinary"]
   },
 
+  {
+    title: "Food Ordering App",
+    description:
+      "A Swiggy-like food ordering platform with live restaurant data, cart system, menu page and smooth UI interactions.",
+    image: "/projects/Food-ordering.png",
+    github: "https://github.com/Sahil-Shinde-13/Food-Ordering-App",
+    demo: "https://www.youtube.com/watch?v=io2Mkij620M",
+    tech: ["React", "Redux Toolkit", "Tailwind", "Swiggy Live API"]
+  },
+
+  
   {
     title: "University Landing Page",
     description:
